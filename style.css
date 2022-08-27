@@ -1,0 +1,58 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.all_commands {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    width: 1050px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.dml, .ddl, .tcl, .dcl {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: repeat(6, 50px);
+    row-gap: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 20px;
+    line-height: 40px;
+}
+
+.dml :first-child, .ddl :first-child, .tcl :first-child, .dcl :first-child {
+    background-color: rgba(249, 202, 158, 0.842);
+    font-weight: 700;
+}
+
+.dml :nth-child(2) {
+    background-color: rgb(154, 238, 154);
+}
+
+.dml_item {
+    border: 2px solid green;
+}
+
+.ddl_item {
+    border: 2px solid yellow;
+}
+
+.tcl_item {
+    border: 2px solid blue;
+}
+
+.dcl_item {
+    border: 2px solid red;
+}
+
+.dml_item, .ddl_item, .tcl_item, .dcl_item {
+    border-radius: 7px;
+}
